@@ -1,0 +1,64 @@
+//
+//  main.cpp
+//  problem1
+//
+//  Created by Julia Sumague on 01/05/2019.
+//  Copyright © 2019 Julia Sumague. All rights reserved.
+//
+
+#include <iostream>
+
+using namespace std;
+int main ()
+
+{
+    char package;
+    int A, B, C, additional_hours;
+    
+    A = 995;
+    B = 1495;
+    C = 1995;
+    
+    cout << "WELCOME TO UST'S FIBERX INTERNET SERVICE PROVIDER!" << endl;
+    cout << "Here are our different subscriptions:" << endl;
+    cout << "Package A: For P995/month 10 hrs of access are provided. Additional hours are P20/hr" << endl;
+    cout << "Pacakge B: For P1495/month 20 hrs of access are provided. Additional hours are P10/hr" << endl;
+    cout << "Package C: For P1995/month of unlimited access is provided." << endl;
+    cout << "Please indicate which package you have purchased: " << endl;
+    cin >> package;
+    cout << "Please indicate how many hours were consumed: " << endl;
+    cin >> additional_hours;
+    
+        if (package == 'A' && additional_hours <= 10)
+        {
+            cout << "Total Monthly Bill: ";
+            cout << "P" << A << endl;
+        }
+        
+        else if (package == 'A' && additional_hours >=11)
+        {
+            
+            cout << "Total Monthly Bill: ";
+            cout << "P" << A + ((additional_hours - 10) * 20) << endl;
+        }
+    
+        else if (package == 'B' && additional_hours <= 20)
+        {
+            cout << "Total Monthly Bill: ";
+            cout << "P" << B << endl;
+        }
+    
+        else if (package == 'B' && additional_hours >= 21)
+        {
+            cout << "Total Monthly Bill: ";
+            cout << "P" << B + ((additional_hours - 20) * 10) << endl;
+        }
+    
+        else if (package == 'C')
+        {
+            cout << "Total Monthly Bill: ";
+            cout << "P" << C << endl;
+        }
+    
+        return 0;
+}
