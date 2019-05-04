@@ -1,0 +1,40 @@
+//
+//  main.cpp
+//  problem4
+//
+//  Created by Julia Sumague on 02/05/2019.
+//  Copyright © 2019 Julia Sumague. All rights reserved.
+//
+
+#include <iostream>
+
+using namespace std;
+int main()
+
+{
+    int first, second, third;
+    
+    cout << "Enter first number: " << endl;
+    cin >> first;
+    cout << "Enter second number: " << endl;
+    cin >> second;
+    cout << "Enter third number: " << endl;
+    cin >> third;
+    
+    if (first > second && first > third)
+    {
+        cout << "The LARGEST of the three numbers is " << first << endl;
+    }
+    
+    else if (second > first && second > third)
+    {
+        cout << "The LARGEST of the three numbers is " << second << endl;
+    }
+    
+    else if (third > first && third > first)
+    {
+        cout << "The LARGEST of the three numbers is " << third << endl;
+    }
+    
+    return 0;
+}
