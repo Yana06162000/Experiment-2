@@ -1,0 +1,44 @@
+//
+//  main.cpp
+//  problem2
+//
+//  Created by Julia Sumague on 01/05/2019.
+//  Copyright © 2019 Julia Sumague. All rights reserved.
+//
+
+#include <iostream>
+
+using namespace std;
+int main ()
+
+{
+    string payment;
+    int water_demand, this_month, unpaid_balance;
+    double consumption_charge;
+    
+    water_demand = 35;
+    consumption_charge = 1.10;
+    
+    cout << "Welcome to España's Water Supply!" << endl;
+    cout << "Please enter this month's meter reading: " << endl;
+    cin >> this_month;
+    cout << "Please enter last month's meter reading: " << endl;
+    cin >> unpaid_balance;
+    cout << "Did you pay last month's WATER BILL? YES or NO?" << endl;
+    cin >> payment;
+    
+    if (payment == "YES")
+    {
+        cout << "Total Bill: ";
+        cout << "P" << ((this_month * consumption_charge) + water_demand) << endl;
+    }
+    
+    else if (payment == "NO")
+    {
+        cout << "Total Bill : ";
+        cout << "P" << ((((this_month + unpaid_balance) * consumption_charge) + water_demand) + 20) << endl;
+    }
+    
+    return 0;
+    
+}
