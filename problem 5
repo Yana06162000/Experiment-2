@@ -1,0 +1,25 @@
+//
+//  main.cpp
+//  problem5
+//
+//  Created by Julia Sumague on 02/05/2019.
+//  Copyright © 2019 Julia Sumague. All rights reserved.
+//
+
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+int main()
+{
+    int  counter;
+    
+    cout << "START: " << endl;
+    
+    for (counter = 1; counter <= 10; counter ++)
+        cout << counter << ",";
+    for (counter = 12; counter <= 30; counter += 2)
+        cout << counter << ",";
+    
+    return 0;
+}
