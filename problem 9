@@ -1,0 +1,32 @@
+//
+//  main.cpp
+//  problem 9
+//
+//  Created by Julia Sumague on 04/05/2019.
+//  Copyright © 2019 Julia Sumague. All rights reserved.
+//
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int columns, rows, c, r;
+    r = 1;
+    c = 2;
+    
+    cout << "Number of row/s: ";
+    cin >> rows;
+    cout << "Number of column/s: ";
+    cin >> columns;
+    
+    for (int r = 1; r <= rows; r++)
+        {
+            for (int c = 2; c <= columns; c++)
+                {
+                    cout << "*";
+                }
+            cout << "*\n";
+    }
+    return 0;
+}
