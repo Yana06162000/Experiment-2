@@ -1,0 +1,39 @@
+//
+//  main.cpp
+//  problem7
+//
+//  Created by Julia Sumague on 02/05/2019.
+//  Copyright © 2019 Julia Sumague. All rights reserved.
+//
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int n, total, i;
+    
+    i = 1;
+    total = 0;
+    
+    cout << "Enter a number: ";
+    cin >> n;
+
+    if (n <= 0)
+    {
+        cout << "INVALID INPUT!" << endl;
+    }
+    
+    else
+    {
+        while (i <= n)
+        {
+            total = total + i;
+            i++;
+        }
+        cout << "The sum of all whole numbers of " << n << " is " << total << endl;
+
+    }
+    
+    return 0;
+}
