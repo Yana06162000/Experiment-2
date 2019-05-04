@@ -1,0 +1,40 @@
+//
+//  main.cpp
+//  problem6
+//
+//  Created by Julia Sumague on 02/05/2019.
+//  Copyright © 2019 Julia Sumague. All rights reserved.
+//
+
+#include <iostream>
+
+using namespace std;
+int main()
+
+{
+    int n, c, terms, first, second;
+    
+    first = 0;
+    second = 1;
+    
+    cout << "Indicate the number of Fibonacci Sequence terms do you wish to see: " << endl;
+    cin >> terms;
+    
+    cout << "The FIRST " << terms << " terms of the Fibonacci Sequence!" << endl;
+    
+    for (n = 0 ; n < terms ; n++)
+
+    {
+        if (n <= 1)
+            c = n;
+        else
+        {
+            c = first + second;
+            first = second;
+            second = c;
+        }
+        cout << c << ",";
+    }
+        
+    return 0;
+}
