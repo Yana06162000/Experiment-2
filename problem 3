@@ -1,0 +1,51 @@
+//
+//  main.cpp
+//  problem3
+//
+//  Created by Julia Sumague on 01/05/2019.
+//  Copyright © 2019 Julia Sumague. All rights reserved.
+//
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main ()
+
+{
+    double x, y, z;
+    
+    z = 2.5;
+    
+    cout << "Input the value of x: " << endl;
+    cin >> x;
+    cout << "Input the value of y: " << endl;
+    cin >> y;
+    
+    if (x == 1 && y > 1 && y < 5)
+    {
+        cout << "V = " << (x * y * z) << endl;
+    }
+    
+    else if (x == 1 && y >= 5)
+    {
+        cout << "V = " << ((y / z) + x) << endl;
+    }
+    
+    else if (x == 2 && y <= 5)
+    {
+        cout << "V = " << abs((x - y) / z) << endl;
+    }
+    
+    else if (x == 2 && y > 5)
+    {
+        cout << "V = " << (sqrt(y + z) - x) << endl;
+    }
+    
+    else if (x > 2 && y > 6)
+    {
+        cout << "V = " << (x + y + z) << endl;
+    }
+             
+    return 0;
+}
